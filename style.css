@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+body {
+    max-width: 100vw;
+    height: 2000px;
+    background-color: white;
+    
+}
+.green{
+    color: green;
+}
+.black{
+    background-color: black;
+    color: white;
+    
+}
+header {
+    position: fixed;
+    display: flex;
+    height: 45px;
+    width: 100%;
+    background-color:white;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.navbar ul {
+
+    display: flex;
+
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    margin: 0 8px;
+    transition: 0.5s;
+
+
+}
+
+.navbar ul li a:hover {
+    background-color: rgb(131, 201, 131);
+
+}
+
+.navbar ul li .active {
+    background-color:rgb(139, 213, 139);
+
+}
+
+.logo {
+    padding: 10px 40px;
+    font-size: large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.lines {
+    margin-left:200px;
+    display: none;
+  
+}
+
+#moon
+{
+    background-color: yellow;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin:0 20px;
+   align-self: center;
+
+}
+.main-img{
+    height: 500px;
+    width: 100%;
+    background-color:rgb(236, 238, 236);
+   border-bottom-right-radius:300px;
+   background: url("li-battery.jpg") ;
+   box-shadow: 0 0 5px;
+ 
+}
+.text{
+    display: flex;
+ align-items: center;
+}
+
+.pattern-dots-lg{
+   margin-top: 100px;
+    height:300px;
+    width: 500px;
+   opacity: 0.4;
+}
+.text1{
+    font-size: 100px;
+    font-weight: 900;
+    color: green;
+    margin-left: -100px;
+    margin-top: 50px;
+    
+    
+}
+.box1{
+    margin-left: 4em;
+    margin-top: 2em;
+    height: 360px;
+    width: 300px;
+    border-radius:20px;
+    background-color:rgb(139, 213, 139);
+}
+.inner-box{
+    position: absolute;
+    height: 300px;
+    width:290px;
+    background-image: url("recyclebattery.jpg");
+    border-radius:20px;
+    margin-left:5px;
+    margin-top: 5px;
+    overflow: hidden;
+   
+}
+.inner-box:hover {
+    
+    opacity: 0.7;
+}
+.inner-box p{
+  position: absolute;
+  bottom: -215px;
+  padding: 5px;
+  font-weight:bold;
+  font-size: 16px;
+  color:rgb(255, 255, 255);
+}
+.inner-box:hover p{
+  transform: translateY(-240px);
+  transition: 0.8s;
+
+   
+}
+.m1{
+ position: absolute;
+ font-size: 20px;
+ font-weight:bolder;
+
+margin-top:320px;
+margin-left: 100px;
+ color: white;
+}
+.container{
+    display: flex;
+}
+footer{
+position: absolute;
+margin-top: 570px;
+
+    height: 150px;
+    width: 100%;
+    background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content:space-between;
+
+}
+.info{
+    color:rgb(220, 232, 220);
+    padding-left: 20px;
+}
+
+.info p a{
+    text-decoration: none;
+    color: green;
+}
+.info .n{
+    color: green;
+}
+.support{
+    color: white;
+  padding-right: 40px;
+}
+.social-media ul{
+    display: flex;
+    align-items: center;
+    padding-right:20px;
+    margin-top: 11px;
+}
+.social-media ul li{
+    list-style: none;
+}
+.copy{
+    position: absolute;
+    margin-left: 600px ;
+    bottom: 70px;
+}
+.second{
+    width: 600px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.aim{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 60px;
+    height: 40px;
+    width: 100%;
+    
+}
+.aim .textl{
+align-self: center;
+
+z-index: 50;
+font-weight: 700;
+font-size: 40px;
+color: rgb(124, 131, 124);
+
+}
+.content{
+    position: absolute;
+    margin-left: 420px;
+    margin-top: 130px;
+   
+    width: 50vw;
+}
+.aim-box{
+    display: flex;
+    margin-left: -60px;
+}
+.boxl1{
+    margin-left: 4em;
+    margin-top: 2em;
+    height: 200px;
+    width: 200px;
+    border-radius:20px;
+    background-color:rgb(139, 213, 139);
+    background-image: url("environment.jpg");
+}
+.bg:hover{
+ cursor: pointer;
+ transform: scale(1.1);
+}
+
+
+@media only screen and (max-width:1450px) {
+    header {
+        padding: 0 50px;
+        transition:0.2s;
+    }
+    .main-img{
+        height: 450px;
+        padding: 0 50px;
+        transition: 0.3s;
+       
+     
+    }
+    main{
+        transition:0.2s;
+        padding: 0 30px;  
+    }
+   footer{
+    padding: 0 50px;
+    transition:0.2s;
+   }
+  .container{
+   display:inline-flex;
+   flex-direction: column;
+  }
+  .box1{
+    height: 200px;
+    width: 200px;
+
+  }
+  .inner-box{
+    height: 200px;
+    width: 10px;
+    overflow: hidden;
+  }
+  .inner-box p{
+    position: absolute;
+    bottom: -430px;
+    padding: 2px;
+    font-weight:bold;
+    font-size: 16px;
+    color:rgb(255, 255, 255);
+  }
+  .inner-box:hover p{
+    transform: translateY(-240px);
+    transition: 0.8s;
+  
+     
+  }
+  .aim{
+   display: inline-flex;
+   flex-direction: column;
+  }
+  .pattern-dots-lg{
+    height: 100px;
+    width: 60px;
+}
+.text1{
+    font-size: 40px;
+    margin-left:-20px;
+
+}
+}
+
+@media only screen and (max-width:900px) {
+    header {
+        padding: 0 50px;
+        transition:0.2s;
+    }
+    .lines {
+        display: block;
+        cursor: pointer;
+       background-color: white;
+       height: 8px;
+       transition: 0.2s;
+  
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    header {
+        padding: 0 60px;
+    }
+
+    .lines {
+        display: block;
+        cursor: pointer;
+       background-color: white;
+       height: 8px;
+  
+    }
+
+    .lines span {
+        position: absolute;
+        background-color: black;
+        height: 25px;
+        width: 2px;
+      margin-left: 500px;
+ transition: 0.2s;
+    }
+
+    .first {
+        left: 20px;
+        transform: rotate(90deg);
+    }
+
+    .sec {
+        left: 20px;
+        top: 10px;
+        transform: rotate(90deg);
+    }
+
+    .navbar.activ {
+
+        height: 400px;
+ 
+    }
+
+    .navbar {
+        position: absolute;
+        top: 45px;
+        left: 0px;
+        height: 0px;
+        width: 180px;
+        background-color: #333;
+        transition: 0.2s;
+
+    }
+
+    .navbar.activ ul{
+        opacity: 1;
+    }
+
+    .navbar ul {
+        display: block;
+        width: fit-content;
+        margin-top: 50px;
+        opacity:0;
+       
+    }
+    #moon{
+        margin-top:30px;
+        margin-left:30px;
+
+    }
+
+    .navbar ul li {
+        margin-top: 30px;
+
+    }
+
+    .logo {
+        padding-left: 80px;
+        transition: 0.2s;
+    }
+}
+@media only screen and (max-width:400px) {
+  
+    .main-img{
+    width: 500px;
+    height: 300px;
+   }
+   footer{
+    height: 200px;
+    width:500px;
+
+   margin-top: 350px;
+ 
+
+   }
+   
+   .text1{
+    margin-left: 40px;
+   }
+   .copy{
+ 
+    position: absolute;
+    left: -320px;
+    top: 20px;
+    width: 250px;
+   }
+   .info{
+    position: absolute;
+ top: 10px;
+   }
+   .support{
+    position: absolute;
+    top: 60px;
+    right: 140px;
+   }
+
+   .social-media{
+    position: absolute;
+    top: 20px;
+   }
+   
+  .aim{
+    position: absolute;
+    left: 0;
+   margin-top:60px;
+  }
+  .content{
+    position: absolute;
+ left: -310px;
+  }
+  .content{
+    width: 450px;
+
+  }
+  .boxl1{
+    height: 100px;
+    width: 100px;
+  }
+  .box1{
+    width: 500px;
+    
+  }
+  .inner-box{
+    width: 350px;
+    height:190px;
+    position: absolute;
+  right:-190px;
+    margin-bottom:4px;
+  }
+  .m1{
+    
+    left: 5px;
+  }
+  .pattern-dots-lg{
+    width: 100px;
+    height: 80px;
+    left: 0px;
+    position: absolute;
+  }
+  
+}
